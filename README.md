@@ -37,11 +37,7 @@ Here's a walkthrough of implemented user stories:
 <img src='https://imgur.com/a/Tg8nfzb' title='Project1 CS388 width='3:26' alt='Project1 CS388' />
 
 <!-- ScreenToGif -->
-GIF created with ...  
-<!-- Recommended tools:
-[Kap](https://getkap.co/) for macOS
-[ScreenToGif](https://www.screentogif.com/) for Windows
-[peek](https://github.com/phw/peek) for Linux. -->
+GIF created with [ScreenToGif](https://www.screentogif.com/) for Windows
 
 ## Notes
 

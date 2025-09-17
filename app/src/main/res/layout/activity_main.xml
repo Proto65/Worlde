@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/guess1"
+        android:layout_width="409dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="1dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Guess #1"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.013" />
+
+    <EditText
+        android:id="@+id/guess2"
+        android:layout_width="409dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="172dp"
+        android:layout_marginEnd="1dp"
+        android:ems="10"
+        android:inputType="text"
+        android:visibility="invisible"
+        android:text="Guess #2"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/guess3"
+        android:layout_width="409dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="272dp"
+        android:layout_marginEnd="1dp"
+        android:ems="10"
+        android:inputType="text"
+        android:visibility="invisible"
+        android:text="Guess #3"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <EditText
+        android:id="@+id/check1"
+        android:layout_width="409dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="120dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Guess #1 Check"
+        android:visibility="invisible"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <EditText
+        android:id="@+id/check2"
+        android:layout_width="409dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="184dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Guess #2 Check"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.351" />
+
+    <EditText
+        android:id="@+id/check3"
+        android:layout_width="409dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="204dp"
+        android:layout_marginEnd="184dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Guess #3 Check"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.313" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="-26dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="409dp"
+        android:layout_height="56dp"
+        android:text="Wordle"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="-18dp" />
+
+
+    <!--Guess 1 box 1-->
+    <EditText
+        android:id="@+id/box1"
+        android:layout_width="48dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/square"
+        android:ems="10"
+        android:inputType="textCapCharacters"
+        android:textAllCaps="true"
+        android:imeOptions="actionNext"
+        android:maxLength="1"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <EditText
+        android:id="@+id/checkBox1"
+        android:layout_width="48dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/square"
+        android:ems="10"
+        android:inputType="textCapCharacters"
+        android:textAlignment="center"
+        android:visibility="invisible"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <!--Guess 2 box 4-->
+    <EditText
+        android:id="@+id/box8"
+        android:layout_width="48dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="344dp"
+        android:layout_marginTop="172dp"
+        android:background="@drawable/square"
+        android:ems="10"
+        android:maxLength="1"
+        android:inputType="textCapCharacters"
+        android:visibility="invisible"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <!--Guess 2 box 3-->
+    <EditText
+        android:id="@+id/box7"
+        android:layout_width="48dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="296dp"
+        android:layout_marginTop="172dp"
+        android:background="@drawable/square"
+        android:ems="10"
+        android:maxLength="1"
+        android:inputType="textCapCharacters"
+        android:visibility="invisible"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <!--Guess 2 box 2-->
+    <EditText
+        android:id="@+id/box6"
+        android:layout_width="48dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="248dp"
+        android:layout_marginTop="172dp"
+        android:background="@drawable/square"
+        android:ems="10"
+        android:maxLength="1"
+        android:inputType="textCapCharacters"
+        android:visibility="invisible"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <!--Guess 2 box 1-->
+    <EditText
+        android:id="@+id/box5"
+        android:layout_width="48dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="172dp"
+        android:background="@drawable/square"
+        android:ems="10"
+        android:inputType="textCapCharacters"
+        android:visibility="invisible"
+        android:textAlignment="center"
+        android:maxLength="1"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <EditText
+        android:id="@+id/checkBox8"
+        android:layout_width="48dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="344dp"
+        android:layout_marginTop="220dp"
+        android:background="@drawable/square"
+        android:visibility="invisible"
+        android:ems="10"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <!--Guess 3 box 4-->
+    <EditText
+        android:id="@+id/box12"
+        android:layout_width="48dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="344dp"
+        android:layout_marginTop="272dp"
+        android:background="@drawable/square"
+        android:visibility="invisible"
+        android:ems="10"
+        android:maxLength="1"
+        android:inputType="textCapCharacters"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <EditText
+        android:id="@+id/checkBox12"
+        android:layout_width="48dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="344dp"
+        android:layout_marginTop="324dp"
+        android:background="@drawable/square"
+        android:visibility="invisible"
+        android:ems="10"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <EditText
+        android:id="@+id/checkBox11"
+        android:layout_width="48dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="296dp"
+        android:layout_marginTop="324dp"
+        android:background="@drawable/square"
+        android:visibility="invisible"
+        android:ems="10"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <EditText
+        android:id="@+id/checkBox10"
+        android:layout_width="48dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="248dp"
+        android:layout_marginTop="324dp"
+        android:background="@drawable/square"
+        android:visibility="invisible"
+        android:ems="10"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <EditText
+        android:id="@+id/checkBox9"
+        android:layout_width="48dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="324dp"
+        android:background="@drawable/square"
+        android:visibility="invisible"
+        android:ems="10"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <!--Guess 3 box 3-->
+    <EditText
+        android:id="@+id/box11"
+        android:layout_width="48dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="296dp"
+        android:layout_marginTop="272dp"
+        android:background="@drawable/square"
+        android:visibility="invisible"
+        android:ems="10"
+        android:maxLength="1"
+        android:inputType="textCapCharacters"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <!--Guess 3 box 2-->
+    <EditText
+        android:id="@+id/box10"
+        android:layout_width="48dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="248dp"
+        android:layout_marginTop="272dp"
+        android:background="@drawable/square"
+        android:visibility="invisible"
+        android:ems="10"
+        android:maxLength="1"
+        android:inputType="textCapCharacters"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <!--Guess 3 box 1-->
+    <EditText
+        android:id="@+id/box9"
+        android:layout_width="48dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="272dp"
+        android:background="@drawable/square"
+        android:visibility="invisible"
+        android:ems="10"
+        android:maxLength="1"
+        android:inputType="textCapCharacters"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <EditText
+        android:id="@+id/checkBox7"
+        android:layout_width="48dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="296dp"
+        android:layout_marginTop="220dp"
+        android:background="@drawable/square"
+        android:visibility="invisible"
+        android:ems="10"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <EditText
+        android:id="@+id/checkBox6"
+        android:layout_width="48dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="248dp"
+        android:layout_marginTop="220dp"
+        android:background="@drawable/square"
+        android:visibility="invisible"
+        android:ems="10"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <EditText
+        android:id="@+id/checkBox5"
+        android:layout_width="48dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="220dp"
+        android:background="@drawable/square"
+        android:visibility="invisible"
+        android:ems="10"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <EditText
+        android:id="@+id/checkBox2"
+        android:layout_width="48dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="248dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/square"
+        android:ems="10"
+        android:inputType="text"
+        android:visibility="invisible"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <EditText
+        android:id="@+id/checkBox3"
+        android:layout_width="48dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="296dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/square"
+        android:ems="10"
+        android:inputType="text"
+        android:visibility="invisible"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <EditText
+        android:id="@+id/checkBox4"
+        android:layout_width="48dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="344dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/square"
+        android:ems="10"
+        android:inputType="text"
+        android:visibility="invisible"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <!--Guess 1 box 3-->
+    <EditText
+        android:id="@+id/box3"
+        android:layout_width="48dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="296dp"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/square"
+        android:ems="10"
+        android:inputType="textCapCharacters"
+        android:textAllCaps="true"
+        android:imeOptions="actionNext"
+        android:maxLength="1"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <!--Guess 1 box 4-->
+    <EditText
+        android:id="@+id/box4"
+        android:layout_width="48dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="344dp"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/square"
+        android:ems="10"
+        android:inputType="textCapCharacters"
+        android:textAllCaps="true"
+        android:imeOptions="actionNext"
+
+        android:maxLength="1"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <!--Guess 1 box 2-->
+    <EditText
+        android:id="@+id/box2"
+        android:layout_width="48dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="248dp"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/square"
+        android:ems="10"
+        android:inputType="textCapCharacters"
+        android:textAllCaps="true"
+        android:imeOptions="actionNext"
+        android:maxLength="1"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <Button
+        android:id="@+id/subButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="96dp"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:ems="10"
+        android:inputType="text"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/subButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/check3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
